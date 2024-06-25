@@ -8,10 +8,36 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.8/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primaryColor: '#E527B2',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body>
+    <header>
+        <div class="navbar bg-base-300 flex justify-between">
+            <button class="btn btn-ghost text-xl">Summer Shop</button>
+            <button class="btn bg-primaryColor text-white text-xl">Blogs</button>
 
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+
+    <script src="./JS/utilities.js"></script>
+    <script src="./JS/summerShop.js"></script>
 </body>
 
 </html>
