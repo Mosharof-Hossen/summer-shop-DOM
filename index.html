@@ -61,7 +61,7 @@
         </section>
 
         <!-- Product list and card -->
-        <section class="flex flex-wrap-reverse my-5 p-10">
+        <section class="flex flex-wrap-reverse justify-center  my-5 p-10">
             <!-- products -->
             <div class="flex-1">
 
@@ -268,13 +268,13 @@
             </div>
 
             <!-- cart -->
-            <div class="w-[320px] space-y-4 mt-16">
+            <div class="w-[320px] space-y-4 mt-16 mb-10">
                 <div class="bg-white p-4 rounded space-y-3">
                     <h3 class="text-2xl font-medium">Have Coupon?</h3>
                     <div class="join">
-                        <input class="w-full input input-bordered join-item" placeholder="Coupon Code" />
+                        <input id="coupon-input" class="w-full input input-bordered join-item" placeholder="Coupon Code" />
                         <button
-                            class="btn join-item rounded-r-lg bg-primaryColor text-white hover:bg-pink-500 btn-disabled">Apply</button>
+                           id="apply" class="btn join-item rounded-r-lg bg-primaryColor text-white hover:bg-pink-500 btn-disabled">Apply</button>
                     </div>
                 </div>
 
@@ -286,12 +286,12 @@
                     <div class="">
                         <p class="text-xl font-medium">Total Price: <span class="text-gray-500"><span
                                     id="total-price">0.0</span> TK</span></p>
-                        <p class="text-xl font-medium">Discount: <span class="text-gray-500"><span>0.0</span> TK</span>
+                        <p class="text-xl font-medium">Discount: <span class="text-gray-500"><span id="discount">0.0</span> TK</span>
                         </p>
-                        <p class="text-xl font-medium">Total: <span class="text-gray-500"><span>0.0</span> TK</span></p>
+                        <p class="text-xl font-medium">Total: <span class="text-gray-500"><span id="total">0.0</span> TK</span></p>
                         <hr class="my-3">
                         <div class="text-center -mb-8">
-                            <button class=" bg-primaryColor hover:bg-pink-500 text-white py-1 px-8 rounded">Make
+                            <button id="make-purchase" class="btn bg-primaryColor hover:bg-pink-500 text-white py-1 px-8 rounded btn-disabled">Make
                                 Purchase</button>
                         </div>
                     </div>
