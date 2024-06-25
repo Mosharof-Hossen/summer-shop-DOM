@@ -82,9 +82,9 @@
                                         checked="checked" />
                                     <input type="radio" name="rating-14" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h2 class="font-semibold text-xl">K. Accessories</h2>
-                                <p class="text-xl text-gray-400"><span>39.00</span> TK</p>
-                                <button id="k-accessories"
+                                <h2 id="k-accessories" class="font-semibold text-xl">K. Accessories</h2>
+                                <p class="text-xl text-gray-400"><span id="k-accessories-price">39.00</span> TK</p>
+                                <button id="k-accessories-btn"
                                     class="bg-primaryColor hover:bg-pink-500 px-4 py-1 rounded text-white">Buy
                                     Now</button>
 
@@ -251,12 +251,31 @@
             </div>
 
             <!-- cart -->
-            <div class="w-[320px]  mt-16">
+            <div class="w-[320px] space-y-4 mt-16">
                 <div class="bg-white p-4 rounded space-y-3">
                     <h3 class="text-2xl font-medium">Have Coupon?</h3>
                     <div class="join">
                         <input class="w-full input input-bordered join-item" placeholder="Coupon Code" />
-                        <button class="btn join-item rounded-r-lg bg-primaryColor text-white hover:bg-pink-500 btn-disabled">Apply</button>
+                        <button
+                            class="btn join-item rounded-r-lg bg-primaryColor text-white hover:bg-pink-500 btn-disabled">Apply</button>
+                    </div>
+                </div>
+
+                <!-- List -->
+                <div class="bg-white p-4 rounded space-y-3">
+                    <div id="card-item-list">
+                    </div>
+                    <hr>
+                    <div class="">
+                        <p class="text-xl font-medium">Total Price: <span class="text-gray-500"><span id="total-price">0.0</span> TK</span></p>
+                        <p class="text-xl font-medium">Discount: <span class="text-gray-500"><span>0.0</span> TK</span>
+                        </p>
+                        <p class="text-xl font-medium">Total: <span class="text-gray-500"><span>0.0</span> TK</span></p>
+                        <hr class="my-3">
+                        <div class="text-center -mb-8">
+                            <button class=" bg-primaryColor hover:bg-pink-500 text-white py-1 px-8 rounded">Make
+                                Purchase</button>
+                        </div>
                     </div>
                 </div>
             </div>
