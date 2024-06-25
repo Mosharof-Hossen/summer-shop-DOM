@@ -272,9 +272,10 @@
                 <div class="bg-white p-4 rounded space-y-3">
                     <h3 class="text-2xl font-medium">Have Coupon?</h3>
                     <div class="join">
-                        <input id="coupon-input" class="w-full input input-bordered join-item" placeholder="Coupon Code" />
-                        <button
-                           id="apply" class="btn join-item rounded-r-lg bg-primaryColor text-white hover:bg-pink-500 btn-disabled">Apply</button>
+                        <input id="coupon-input" class="w-full input input-bordered join-item"
+                            placeholder="Coupon Code" />
+                        <button id="apply"
+                            class="btn join-item rounded-r-lg bg-primaryColor text-white hover:bg-pink-500 btn-disabled">Apply</button>
                     </div>
                 </div>
 
@@ -286,13 +287,31 @@
                     <div class="">
                         <p class="text-xl font-medium">Total Price: <span class="text-gray-500"><span
                                     id="total-price">0.0</span> TK</span></p>
-                        <p class="text-xl font-medium">Discount: <span class="text-gray-500"><span id="discount">0.0</span> TK</span>
+                        <p class="text-xl font-medium">Discount: <span class="text-gray-500"><span
+                                    id="discount">0.0</span> TK</span>
                         </p>
-                        <p class="text-xl font-medium">Total: <span class="text-gray-500"><span id="total">0.0</span> TK</span></p>
+                        <p class="text-xl font-medium">Total: <span class="text-gray-500"><span id="total">0.0</span>
+                                TK</span></p>
                         <hr class="my-3">
                         <div class="text-center -mb-8">
-                            <button id="make-purchase" class="btn bg-primaryColor hover:bg-pink-500 text-white py-1 px-8 rounded btn-disabled">Make
+                            <button id="make-purchase"
+                            onclick="my_modal_5.showModal()" class="btn bg-primaryColor hover:bg-pink-500 text-white py-1 px-8 rounded btn-disabled">Make
                                 Purchase</button>
+
+                            <!-- Open the modal using ID.showModal() method -->
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box text-center">
+                                    <img src="./images/congo.png" alt="" class="mx-auto" srcset="">
+                                    <h2 class="text-5xl font-bold">Congratulations</h2>
+                                    <p class="py-4">Your Purchase the product</p>
+                                    <div class="">
+                                        <form method="">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button onclick="refresh" class="btn bg-primaryColor hover:bg-pink-500 text-white">Go Home</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
