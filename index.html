@@ -8,31 +8,55 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.8/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                primaryColor: '#E527B2',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primaryColor: '#E527B2',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+
+    <style>
+        .font-work{
+            font-family: "Work Sans", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-work">
     <header>
         <div class="navbar bg-base-300 flex justify-between">
             <button class="btn btn-ghost text-xl">Summer Shop</button>
-            <button class="btn bg-primaryColor text-white text-xl">Blogs</button>
-
+            <button class="btn bg-primaryColor hover:bg-pink-500 text-white text-xl">Blogs</button>
         </div>
     </header>
 
     <main>
+        <!-- Banner -->
+        <section class="flex flex-col md:flex-row bg-[#F9F6E2] items-center p-10 ">
+            <div class="flex-1 text-center space-y-6">
+                <h4 class="font-medium text-black text-xl">---SALE FEVER---</h4>
+                <h2 class="font-bold text-3xl">Purchase TK 200 or above & get <span class="text-primaryColor">20% off</span></h2>
+                <div class="font-semibold">
+                    Use Promo Code <button class=" bg-primaryColor hover:bg-pink-500 text-white rounded px-3 py-1">SELL200</button>
+                </div>
+            </div>
+
+            <div class="flex-1">
+                <img class="w-full" src="./images/Summer 1.png" alt="" srcset="">
+            </div>
+        </section>
 
     </main>
 
